@@ -1,0 +1,30 @@
+.Navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left{
+     width: 45%;
+}
+.leftSideItems{
+    margin-top: 10px;
+    display: flex;
+    column-gap: 20px;
+    padding: 20px;
+    justify-content: left;
+    align-items: center;
+}
+.mid{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.right{
+    margin-top: 10px;
+     width: 45%;
+     display: flex;
+     justify-content: right;
+     align-items: center;
+     column-gap: 20px;
+     padding: 20px;
+}
