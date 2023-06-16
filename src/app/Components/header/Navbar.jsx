@@ -8,10 +8,6 @@ const Navbar = () => {
           <div className='left'>
             <ul className='leftSideItems'>
               <li>Home</li>
-              <li>Shop All</li>
-              <li>Shop Man</li>
-              <li>Shop Women</li>
-              <li>Get in Touch!</li>
             </ul>
           </div>
           <div className='mid'>
