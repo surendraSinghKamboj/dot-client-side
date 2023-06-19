@@ -2,6 +2,7 @@
 import React from 'react'
 import './Footer.css';
 import logoImg from './user.png';
+import Image from "next/image";
 import Link from 'next/link';
 // import HiOfficeBuilding from 'react-icons/hi';
 const Footer = () => {
@@ -9,8 +10,8 @@ const Footer = () => {
     <div className='parent'>
         <div className='Container'>
               <div className='ComapnySection sub-container'>
-                   {/* <img src={logoImg} alt="Logo Img" /> */}
-                   <h1 className='logo'>LOGO</h1>
+                    <Image src={logoImg} className='logo' alt="Logo Img" />
+                   {/* <h1 className='logo'>LOGO</h1> */}
                    <p className='aboutCompany'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit blanditiis, illo vel quidem quod earum dolore eum voluptas </p>
               </div>
               <div className='Products-Catagery sub-container'>
