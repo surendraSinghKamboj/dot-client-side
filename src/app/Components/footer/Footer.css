@@ -1,21 +1,19 @@
  .parent{
      color: white;
      background-color: rgb(63, 62, 62);
+     margin-top: 50px;
  }
  .Container{
     display: flex;
     flex-wrap: wrap;
-    /* border: 2px solid yellow; */
     /* height: 300px; */
     justify-content: center;
     
  }
  .sub-container{
-     /* border: 2px solid red; */
      width: 280px;
  }
  .logo{
-    /* font-size:30px; */
      margin-left: 40px;
      margin-top: 35px;
      margin-bottom: 30px;
@@ -26,7 +24,6 @@
  }
  .heading{
      font-size: 17px;
-     /* text-align: center; */
      margin-left: 40px;
      margin-top: 35px;
      margin-bottom: 30px;
@@ -78,7 +75,6 @@
 
  @media (max-width:1150px){
     .sub-container{
-        /* border: 2px solid red; */
         width: 250px;
     }
     .logo{
@@ -102,7 +98,6 @@
  }
  @media (max-width:1030px){
     .sub-container{
-        /* border: 2px solid red; */
         width: 220px;
     }
  }
@@ -111,7 +106,6 @@
         display: flex;
         flex-wrap: wrap;
         border: 2px solid yellow;
-        /* height: 300px; */
         justify-content: center;
         column-gap: 25px;
         
@@ -142,37 +136,31 @@
  }
  @media(min-width:1250px){
     .sub-container{
-        /* border: 2px solid red; */
         width: 300px;
     }
  }
  @media(min-width:1350px){
     .sub-container{
-        /* border: 2px solid red; */
         width: 330px;
     }
  }
  @media(min-width:1450px){
     .sub-container{
-        /* border: 2px solid red; */
         width: 350px;
     }
  }
  @media(min-width:1550px){
     .sub-container{
-        /* border: 2px solid red; */
         width: 380px;
     }
  }
  @media(min-width:1650px){
     .sub-container{
-        /* border: 2px solid red; */
         width: 410px;
     }
  }
  @media(min-width:1750px){
     .sub-container{
-        /* border: 2px solid red; */
         width: 430px;
     }
  }

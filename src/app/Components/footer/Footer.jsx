@@ -2,6 +2,7 @@
 import React from 'react'
 import './Footer.css';
 import logoImg from './user.png';
+import Link from 'next/link';
 // import HiOfficeBuilding from 'react-icons/hi';
 const Footer = () => {
   return (
@@ -24,7 +25,8 @@ const Footer = () => {
               </div>
               <div className='Usefull-links sub-container'>
                    <h1 className='heading usefullLinkParent'>USEFULL LINKS</h1>
-                    <a className='usefullLinks' href="">Your Account</a>
+                   <Link href={'/account/login'} className='usefullLinks'>Your Account</Link>
+                    {/* <a className='usefullLinks' href="">Your Account</a> */}
                     <a className='usefullLinks' href="">Become an Seller</a>
                     <a className='usefullLinks' href="">FAQ's</a>
                     <a className='usefullLinks' href="">Privacy Policy</a>
