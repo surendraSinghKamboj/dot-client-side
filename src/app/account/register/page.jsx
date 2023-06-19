@@ -17,7 +17,7 @@ const page = () => {
          e.preventDefault();
          console.log(inputData);
     }
-  return (
+  return ( 
     <div>
       <h1 className='register text-center mt-36 font-extrabold text-5xl '>Register</h1>
       <p className=' text-center mt-3'>Please fill in the fields below</p>

@@ -7,7 +7,7 @@ const page = () => {
   const [inputData, setInputData] = useState({
       email:"",
       password:""
-  });
+  }); 
 
   const handleInput=(e)=>{
       setInputData({...inputData,[e.target.name]:e.target.value});

@@ -2,6 +2,7 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import productData from "./ProductData";
+import './GallerySliderOne.css'
 
 const responsive = {
   superLargeDesktop: {
