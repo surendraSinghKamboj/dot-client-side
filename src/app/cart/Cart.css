@@ -1,0 +1,13 @@
+.productName{
+
+}
+
+@media(max-width:772px){
+     .productName{
+        font-size: 15px;
+     }
+     .productImg{
+        padding: 0px;
+        min-width: 65px;
+     }
+}

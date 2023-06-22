@@ -2,7 +2,8 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import productData from "./ProductData";
-import './GallerySliderOne.css'
+import "./GallerySliderOne.css";
+import Link from "next/link";
 
 const responsive = {
   superLargeDesktop: {
@@ -26,7 +27,7 @@ const responsive = {
 
 const GallerySliderOne = () => {
   const ButtonClick = () => {
-    alert("Hello");
+    alert("You will be redirected to the Product Details Page!");
   };
   return (
     <div className=" mr-10 ml-10 ">
@@ -50,9 +51,11 @@ const GallerySliderOne = () => {
                     alt=""
                   />
                   <div className="image-button-parent">
-                    <button className="image-button" onClick={ButtonClick}>
-                      View Details
-                    </button>
+                    <Link href={"./productDetails"}>
+                      <button className="image-button" onClick={ButtonClick}>
+                        View Details
+                      </button>
+                    </Link>
                   </div>
                 </div>
                 <div className=" text-center">

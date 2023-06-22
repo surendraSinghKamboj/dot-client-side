@@ -1,0 +1,99 @@
+.CompParent{
+    margin: 5% 10%;
+}
+.DetailsParent{
+    display: flex;
+}
+.imgParent{
+    width: 55%;
+    height: 700px;
+    display: flex;
+    flex-wrap: wrap;
+}
+@media(max-width:1290px){
+      .CompParent{
+         margin: 5% 5%;
+      }
+      .sumImgContainer{
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+      }
+      .subImg{
+         margin-right: 20px;
+      }
+}
+.img{
+    height: 100%;
+    width: 500px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+.subImg{
+     height: 170px;
+     width: 120px;
+     object-fit: cover;
+     margin-bottom: 20px;
+}
+
+/* Right Side content */
+.ContentParent{
+     margin-left: 40px;
+}
+.brandName{
+    font-weight: 700;
+}
+.productName{
+     font-size: 28px;
+     font-weight: 700;
+}
+.currentprice{
+    font-weight: 800;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.mrpPrice{
+   font-size: 20px;
+}
+.subMrpPrice{
+    text-decoration: line-through;
+}
+.percentOff{
+    color: #ff905a;
+    font-size: 20px;
+}
+.inclusiceTexas{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #03a685;
+    font-weight: 500;
+}
+.quantitybutton{
+    border: 1px solid rgb(189, 189, 189);
+    padding: 7px 40px;
+    border-radius: 4px;
+}
+.AddToCartBtn{
+    margin-top: 40px;
+    width: 100%;
+    background: #e5e5e5;
+    font-weight: 600;
+    padding: 10px 0;
+    color: black;
+    text-align: center;
+    border-radius: 5px;
+}
+.AddToCartBtn:hover{
+     background-color: black;
+     color: white;
+}
+.butWithbtn{
+    margin-top: 20px;
+    width: 100%;
+    background: black;
+    font-weight: 600;
+    padding: 10px 0;
+    color:white;
+    text-align: center;
+    border-radius: 5px;
+}
