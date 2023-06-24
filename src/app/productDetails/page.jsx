@@ -7,11 +7,11 @@ const page = () => {
     <div className='CompParent'>
        <div className='DetailsParent'>
            <div className='imgParent'>
-              <Image className='img' src="https://overlays.co/cdn/shop/products/CopyofDSC01567.jpg?v=1680197290&width=800" alt="" />
+              <img className='img' src="https://overlays.co/cdn/shop/products/CopyofDSC01567.jpg?v=1680197290&width=800" alt="" />
               <div className='sumImgContainer'>
-                  <Image className='subImg' src="https://overlays.co/cdn/shop/products/CopyofDSC01567.jpg?v=1680197290&width=800" alt="" />
-                  <Image className='subImg' src="https://overlays.co/cdn/shop/products/CopyofDSC01567.jpg?v=1680197290&width=800" alt="" />
-                  <Image className='subImg' src="https://overlays.co/cdn/shop/products/CopyofDSC01567.jpg?v=1680197290&width=800" alt="" />
+                  <img className='subImg' src="https://overlays.co/cdn/shop/products/CopyofDSC01567.jpg?v=1680197290&width=800" alt="" />
+                  <img className='subImg' src="https://overlays.co/cdn/shop/products/CopyofDSC01567.jpg?v=1680197290&width=800" alt="" />
+                  <img className='subImg' src="https://overlays.co/cdn/shop/products/CopyofDSC01567.jpg?v=1680197290&width=800" alt="" />
               </div>
            </div>
            <div className='ContentParent'>

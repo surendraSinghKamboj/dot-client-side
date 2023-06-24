@@ -35,8 +35,8 @@ const GallerySliderOne = () => {
       <Carousel
         responsive={responsive}
         infinite={true}
-        autoPlay={window.deviceType !== "mobile" ? true : false}
-        removeArrowOnDeviceType={["tablet", "mobile"]}
+        // autoPlay={this.deviceType !== "mobile" ? true : false}
+        // removeArrowOnDeviceType={["tablet", "mobile"]}
       >
         {productData.map((data, i) => {
           return (
@@ -46,7 +46,7 @@ const GallerySliderOne = () => {
                   style={{ height: "499px", width: "327px" }}
                   className="image-container"
                 >
-                  <Image
+                  <img
                     className=" w-full h-full rounded-md "
                     src={data.imgUrl1}
                     alt=""
