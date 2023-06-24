@@ -39,4 +39,4 @@ const Register = () => {
   )
 }
 
-export default page
+export default Register
