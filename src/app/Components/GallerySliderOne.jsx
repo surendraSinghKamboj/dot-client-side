@@ -4,6 +4,7 @@ import "react-multi-carousel/lib/styles.css";
 import productData from "./ProductData";
 import "./GallerySliderOne.css";
 import Link from "next/link";
+import Image from "next/image";
 
 const responsive = {
   superLargeDesktop: {
@@ -45,7 +46,7 @@ const GallerySliderOne = () => {
                   style={{ height: "499px", width: "327px" }}
                   className="image-container"
                 >
-                  <img
+                  <Image
                     className=" w-full h-full rounded-md "
                     src={data.imgUrl1}
                     alt=""

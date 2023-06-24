@@ -2,7 +2,9 @@
 import {useState} from 'react';
 import './page.css';
 import Link from 'next/link';
-const page = () => {
+
+
+const Register = () => {
     const [inputData, setInputData] = useState({
         firstName:"",
         lastName:"",

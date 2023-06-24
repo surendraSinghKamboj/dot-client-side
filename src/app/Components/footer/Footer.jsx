@@ -29,7 +29,7 @@ const Footer = () => {
                    <Link href={'/account/login'} className='usefullLinks'>Your Account</Link>
                     {/* <a className='usefullLinks' href="">Your Account</a> */}
                     <a className='usefullLinks' href="">Become an Seller</a>
-                    <a className='usefullLinks' href="">FAQ's</a>
+                    <a className='usefullLinks' href="">FAQs</a>
                     <a className='usefullLinks' href="">Privacy Policy</a>
               </div>
               <div className='Contact sub-container'>

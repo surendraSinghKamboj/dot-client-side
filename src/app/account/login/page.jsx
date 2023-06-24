@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import './page.css';
 import Link from 'next/link';
 
-const page = () => {
+const Login = () => {
   const [inputData, setInputData] = useState({
       email:"",
       password:""

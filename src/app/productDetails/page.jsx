@@ -1,21 +1,22 @@
 import React from 'react';
 import './details.css';
+import Image from 'next/image';
 
 const page = () => {
   return (
     <div className='CompParent'>
        <div className='DetailsParent'>
            <div className='imgParent'>
-              <img className='img' src="https://overlays.co/cdn/shop/products/CopyofDSC01567.jpg?v=1680197290&width=800" alt="" />
+              <Image className='img' src="https://overlays.co/cdn/shop/products/CopyofDSC01567.jpg?v=1680197290&width=800" alt="" />
               <div className='sumImgContainer'>
-                  <img className='subImg' src="https://overlays.co/cdn/shop/products/CopyofDSC01567.jpg?v=1680197290&width=800" alt="" />
-                  <img className='subImg' src="https://overlays.co/cdn/shop/products/CopyofDSC01567.jpg?v=1680197290&width=800" alt="" />
-                  <img className='subImg' src="https://overlays.co/cdn/shop/products/CopyofDSC01567.jpg?v=1680197290&width=800" alt="" />
+                  <Image className='subImg' src="https://overlays.co/cdn/shop/products/CopyofDSC01567.jpg?v=1680197290&width=800" alt="" />
+                  <Image className='subImg' src="https://overlays.co/cdn/shop/products/CopyofDSC01567.jpg?v=1680197290&width=800" alt="" />
+                  <Image className='subImg' src="https://overlays.co/cdn/shop/products/CopyofDSC01567.jpg?v=1680197290&width=800" alt="" />
               </div>
            </div>
            <div className='ContentParent'>
                <p className='brandName'>Draft of Thread Clothing</p>
-               <h1 className='productName'>Relaxed Fit Men's Free Spirit Tshirt</h1>
+               <h1 className='productName'>Relaxed Fit Mens Free Spirit Tshirt</h1>
                 <hr />
                <span className='currentprice'>&#8377;790.00</span><span className='mrpPrice'>MRP <span className='subMrpPrice'>&#8377;790.00</span></span> <span className='percentOff'>(65% OFF)</span>
                <p className='inclusiceTexas'>inclusive of all taxes</p> <br />
