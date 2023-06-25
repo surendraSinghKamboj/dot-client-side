@@ -21,7 +21,7 @@ const Register = () => {
     }
   return ( 
     <div>
-      <h1 className='register text-center mt-36 font-extrabold text-5xl '>Register</h1>
+      <h1 className='register text-center mt-10 font-extrabold text-5xl '>Register</h1>
       <p className=' text-center mt-3'>Please fill in the fields below</p>
       <div className='register-form'>
        <form className='form' onSubmit={handleForm}> 
