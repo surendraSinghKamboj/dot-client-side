@@ -1,152 +1,83 @@
-// "use client";
-// import {
-//   MDBBtn,
-//   MDBCard,
-//   MDBCardBody,
-//   MDBCardImage,
-//   MDBCol,
-//   MDBContainer,
-//   MDBIcon,
-//   MDBInput,
-//   MDBRow,
-//   MDBTypography,
-// } from "mdb-react-ui-kit";
-// import Link from "next/link";
-// import React from "react";
-// import './Cart.css';
-// import productData from "../Components/ProductData";
+"use client";
+import React from "react";
+import styles from "./cart.module.css";
+import Link from "next/link";
 
-// export default function Basic() {
-//   return (
-//     <section className="h-100 h-custom" style={{ backgroundColor: "#eee" }}>
-//       <MDBContainer className="py-5 h-100">
-//         <MDBRow className="justify-content-center align-items-center h-100">
-//           <MDBCol>
-//             <MDBCard>
-//               <MDBCardBody className="p-4">
-//                 <MDBRow>
-//                   <MDBCol lg="7">
-//                     <MDBTypography tag="h5">
-//                       <Link href="/" className="text-body">
-//                         <MDBIcon fas icon="long-arrow-alt-left me-2" />
-//                         Back to Home
-//                       </Link>
-//                     </MDBTypography>
-
-//                     <hr />
-
-//                     <div className="d-flex justify-content-between align-items-center mb-4">
-//                       <div>
-//                         <p className="mb-1">Shopping cart</p>
-//                         <p className="mb-0">You have 4 items in your cart</p>
-//                       </div>
-//                     </div>
-
-//                     {/* Mapping cart Products */}
-
-//                     {productData.map((product, i) => {
-//                       return (
-//                         <MDBCard className="mb-3">
-//                           <MDBCardBody>
-//                             <div className="d-flex justify-content-between">
-//                               <div className="d-flex flex-row align-items-center">
-//                                 <div>
-//                                   <MDBCardImage
-//                                     src={product.imgUrl1}
-//                                     fluid
-//                                     className="rounded-3 productImg"
-//                                     style={{ width: "120px" }}
-//                                     alt="Shopping item"
-//                                   />
-//                                 </div>
-//                                 <div className="ms-3">
-//                                   <MDBTypography tag="h5" className="productName">
-//                                      {product.name}
-//                                   </MDBTypography>
-//                                   {/* <p className="small mb-0">256GB, Navy Blue</p> */}
-//                                 </div>
-//                               </div>
-//                               <div className="d-flex flex-row align-items-center">
-//                                 <div style={{ width: "50px" }}>
-//                                   <MDBTypography
-//                                     tag="h5"
-//                                     className="fw-normal mb-0"
-//                                   >
-//                                     2
-//                                   </MDBTypography>
-//                                 </div>
-//                                 <div style={{ width: "80px" }}>
-//                                   <MDBTypography tag="h5" className="mb-0">
-//                                     &#8377;{product.price}
-//                                   </MDBTypography>
-//                                 </div>
-//                                 <a href="#!" style={{ color: "#cecece" }}>
-//                                   <MDBIcon fas icon="trash-alt" />
-//                                 </a>
-//                               </div>
-//                             </div>
-//                           </MDBCardBody>
-//                         </MDBCard>
-//                       );
-//                     })}
-//                   </MDBCol>
-
-//                {/* Checkout Card */}
-//                   <MDBCol lg="5">
-//                     <MDBCard className="bg-primary text-white rounded-3">
-//                       <MDBCardBody>
-//                         <div className="d-flex justify-content-between align-items-center mb-4">
-//                           <MDBTypography tag="h5" className="mb-0">
-//                             Card Total :{" "}
-//                             <span className="mb-2">&#8377;4818.00</span>
-//                           </MDBTypography>
-//                         </div>
-
-//                         <hr />
-//                         <div className="d-flex justify-content-between">
-//                           <p className="mb-2">Subtotal</p>
-//                           <p className="mb-2">&#8377;4798.00</p>
-//                         </div>
-
-//                         <div className="d-flex justify-content-between">
-//                           <p className="mb-2">Shipping</p>
-//                           <p className="mb-2">&#8377;20.00</p>
-//                         </div>
-
-//                         <div className="d-flex justify-content-between">
-//                           <p className="mb-2">Total(Incl. taxes)</p>
-//                           <p className="mb-2">&#8377;4818.00</p>
-//                         </div>
-
-//                         <MDBBtn color="info" block size="lg">
-//                           <div className="d-flex justify-content-center">
-//                             <span>
-//                               Proceed to Checkout{" "}
-//                               <i className="fas fa-long-arrow-alt-right ms-2"></i>
-//                             </span>
-//                           </div>
-//                         </MDBBtn>
-//                       </MDBCardBody>
-//                     </MDBCard>
-//                   </MDBCol>
-//                 </MDBRow>
-//               </MDBCardBody>
-//             </MDBCard>
-//           </MDBCol>
-//         </MDBRow>
-//       </MDBContainer>
-//     </section>
-//   );
-// }
-
-import React from 'react'
-
-const page = () => {
+const Cart = () => {
   return (
-    <div>
-        <h1>Hello from Cart Page .</h1>
-    </div>
-  )
-} 
+    <div className={styles.parentDiv}>
+      <div className={styles.mainDiv}>
+        <div className={styles.left}>
+          <Link
+            href="/"
+            className=" font-bold text-gray-600 inline-block ml-10 mt-4 text-xl "
+          >
+            <i className="fas fa-long-arrow-alt-left ms-2 mr-2 text-left"></i>
+            Back to Home
+          </Link>
+          <hr className={styles.hr} />
+          <p className={styles.hrP}>Shopping Cart</p>
+          <p className={styles.hrP}>You have 4 items in your cart </p>
 
-export default page
+          {/* Product Card in Cart Page */}
+          <div className={styles.productMain}>
+            <img
+              className={styles.productImg}
+              src="https://overlays.co/cdn/shop/products/new55.jpg?v=1682003388&width=700"
+              alt=""
+            />
+            <div>
+              <p className={styles.productName}>
+                Relexing Fit Mens free Spirit Tshirt
+              </p>
+            </div>
+            <div className={styles.quentityPriceDeleteParent}>
+              <div className={styles.btnParent}>
+                <p>
+                  <i className="fa-solid fa-minus mr-2 cursor-pointer "></i>
+                </p>
+                <p className={styles.productQuantity}>1</p>
+                <p>
+                  <i className="fa-solid fa-plus ml-2 cursor-pointer"></i>
+                </p>
+              </div>
+              <div className={styles.priceParent}>
+                <p className={styles.productPrice}>&#8377;799/-</p>
+              </div>
+              <div className={styles.dltbtnParent}>
+                <i className="fa-solid fa-trash"></i>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+         {/* Total bill Card in Cart page in right side of the page */}
+        <div className={styles.right}>
+          <p className={styles.cartTotal}>Cart Total : &#8377;799.00/-</p>
+          <hr className={styles.carthr} />
+          <div className={styles.subTotalParent}>
+            <p>Subtotal</p>
+            <p>&#8377;799.00</p>
+          </div>
+          <div className={styles.shippingFeeParent}>
+            <p>Shipping Fee</p>
+            <p>&#8377;20.00</p>
+          </div>
+          <div className={styles.totolParent}>
+            <p>Total(incl. taxes)</p>
+            <p>&#8377;819.00</p>
+          </div>
+          <div className={styles.proceedbtnParent}>
+            <button className={styles.proceedbtn}>
+              PROCEED TO CHECKOUT
+              <i className="fas fa-long-arrow-alt-right ms-2 mr-2"></i>{" "}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Cart;
