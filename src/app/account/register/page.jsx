@@ -2,6 +2,7 @@
 import {useState} from 'react';
 import './page.css';
 import Link from 'next/link';
+import { userSignup } from '@/app/ApiRoutes';
 
 
 const Register = () => {
@@ -18,6 +19,7 @@ const Register = () => {
     const handleForm=(e)=>{
          e.preventDefault();
          console.log(inputData);
+         userSignup(inputData);
     }
   return ( 
     <div>
@@ -30,6 +32,9 @@ const Register = () => {
           <input className='input' type="text" placeholder='Last Name' name="lastName" onChange={handleInput} required />
           <input className='input' type="email" placeholder='E-mail' name="email" onChange={handleInput} required />
           <input className='input' type="password" placeholder='Password' name="password" onChange={handleInput} required />
+          <input className='input' type="number" placeholder='Ph. Number' name="mobile" onChange={handleInput} required />
+          <input type="radio" name="gender" onChange={handleInput} value="male"/> <span>Male</span>
+          <input type="radio" name="gender" onChange={handleInput} value="female"/> <span>Female</span>
           <button className='btn'>CREATE ACCOUNT</button>
         </div>
        </form>

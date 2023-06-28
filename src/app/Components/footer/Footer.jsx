@@ -28,7 +28,7 @@ const Footer = () => {
                    <h1 className='heading usefullLinkParent'>USEFULL LINKS</h1>
                    <Link href={'/account/login'} className='usefullLinks'>Your Account</Link>
                     {/* <a className='usefullLinks' href="">Your Account</a> */}
-                    <a className='usefullLinks' href="">Become an Seller</a>
+                    <a className='usefullLinks' href="">Become the Seller</a>
                     <a className='usefullLinks' href="">FAQs</a>
                     <a className='usefullLinks' href="">Privacy Policy</a>
               </div>
@@ -37,7 +37,7 @@ const Footer = () => {
                     <div>
                        {/* <HiOfficeBuilding/> */}
                        <p className='contactInfo'>Abc Street, Dehli,110001</p>
-                       <p className='contactInfo'>dummy@gamil.com</p>
+                       <p className='contactInfo'>support@driftofthread.com</p>
                        <p className='contactInfo'>+919898989898</p>
                     </div>
 

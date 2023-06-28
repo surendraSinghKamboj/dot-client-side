@@ -30,7 +30,7 @@
        margin: 5% 5%;
     }
     .subImg{
-       margin-right: 20px;
+       margin-right: 20px; 
     }
     .imgParent{
       width: 75%;
@@ -40,7 +40,7 @@
   }
   .subImg{
       height: 170px;
-      width: 150px;
+      width: 120px;
       /* object-fit: cover; */
       margin-bottom: 20px;
  }
@@ -56,6 +56,9 @@
     } */
     .subImg{
        margin-right: 20px;
+    }
+    .img{
+        
     }
 }
 

@@ -4,7 +4,7 @@ import "react-multi-carousel/lib/styles.css";
 import productData from "./ProductData";
 import "./GallerySliderOne.css";
 import Link from "next/link";
-import Image from "next/image";
+// import Image from "next/image";
 
 const responsive = {
   superLargeDesktop: {
@@ -26,7 +26,7 @@ const responsive = {
   },
 };
 
-const GallerySliderOne = () => {
+const GallerySliderOne = ({products}) => {
   const ButtonClick = () => {
     alert("You will be redirected to the Product Details Page!");
   };
@@ -38,9 +38,9 @@ const GallerySliderOne = () => {
         // autoPlay={this.deviceType !== "mobile" ? true : false}
         // removeArrowOnDeviceType={["tablet", "mobile"]}
       >
-        {productData.map((data, i) => {
+        {products.map((product, i) => {
           return (
-            <div key={i}>
+            <div key={product._id}>
               <div className="container mt-10 flex flex-col justify-center items-center gap-5">
                 <div
                   style={{ height: "499px", width: "327px" }}
@@ -48,11 +48,11 @@ const GallerySliderOne = () => {
                 >
                   <img
                     className=" w-full h-full rounded-md "
-                    src={data.imgUrl1}
+                    src={product.mainImage}
                     alt=""
                   />
                   <div className="image-button-parent">
-                    <Link href={"./productDetails"}>
+                    <Link href={`./productDetails/${product._id}`}>
                       <button className="image-button" onClick={ButtonClick}>
                         View Details
                       </button>
@@ -60,8 +60,8 @@ const GallerySliderOne = () => {
                   </div>
                 </div>
                 <div className=" text-center">
-                  <p className=" md:mt-3 md:mb-2 mt-0 ">{data.name}</p>
-                  <p>&#8377; {data.price}</p>
+                  <p className=" md:mt-3 md:mb-2 mt-0 ">{product.productName}</p>
+                  <p>&#8377; {product.currentPrice}</p>
                 </div>
               </div>
             </div>
