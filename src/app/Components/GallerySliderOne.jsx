@@ -28,7 +28,6 @@ const responsive = {
 
 const GallerySliderOne = ({products}) => {
   const ButtonClick = () => {
-    alert("You will be redirected to the Product Details Page!");
   };
   return (
     <div className=" mr-10 ml-10 ">

@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 import './Footer.css';
-import logoImg from './user.png';
+import logoImg from './dotFooterLogo.png';
 import Image from "next/image";
 import Link from 'next/link';
 // import HiOfficeBuilding from 'react-icons/hi';
