@@ -6,7 +6,7 @@ import TopImgSlider from "./Components/TopImgSlider";
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
-function page() {
+function App() {
   const [products, setProducts] = useState([]);
   useEffect(()=>{
       const fetchData = async()=>{
@@ -28,4 +28,4 @@ function page() {
   );
 }
 
-export default page;
+export default App;

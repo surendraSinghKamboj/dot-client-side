@@ -4,7 +4,7 @@ import "./details.css";
 import axios from "axios";
 import { useState, useEffect } from "react";
 
-const page = ({ params }) => {
+const ProductbyId = ({ params }) => {
   console.log(params.productId);
   const [products, setProducts] = useState({});
 
@@ -63,4 +63,4 @@ const page = ({ params }) => {
   );
 };
 
-export default page;
+export default ProductbyId;
