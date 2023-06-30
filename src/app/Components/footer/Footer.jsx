@@ -36,20 +36,20 @@ const Footer = () => {
                    <h1 className='heading'>CONTACT</h1>
                     <div>
                        {/* <HiOfficeBuilding/> */}
-                       <p className='contactInfo'>Abc Street, Dehli,110001</p>
-                       <p className='contactInfo'>support@driftofthread.com</p>
-                       <p className='contactInfo'>+919898989898</p>
+                       <p className='contactInfo'><i className="fa-solid fa-location-dot"></i> Abc Street, Dehli,110001</p>
+                       <p className='contactInfo'><i className="fa-solid fa-envelope"></i> support@ <br /> driftofthread.com</p>
+                       <p className='contactInfo'><i className="fa-solid fa-phone"></i> +919898989898</p>
                     </div>
 
               </div>
         </div>
         <div className='followUs'>
           <h1 className='followUsheading'>Follow us on </h1>
-          <div>
-            <a className='followUsLogo' href="">FaceBook</a>
-            <a className='followUsLogo' href="">Instagram</a>
-            <a className='followUsLogo' href="">Linkedin</a>
-            <a className='followUsLogo' href="">Twitter</a>           
+          <div style={{fontSize:"20px"}}>
+            <a className='followUsLogo' href=""><i className="fa-brands fa-facebook"></i></a>
+            <a className='followUsLogo' href=""><i className="fa-brands fa-instagram"></i></a>
+            <a className='followUsLogo' href=""><i className="fa-brands fa-linkedin"></i></a>
+            <a className='followUsLogo' href=""><i className="fa-brands fa-twitter"></i></a>           
           </div>
         </div>
     </div>

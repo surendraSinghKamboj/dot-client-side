@@ -28,3 +28,8 @@
  bottom: 10px;  
   opacity: 1;
 }
+.cart-and-buy-btn{
+     display: flex;
+     /* border: 2px solid red; */
+     margin-top: -50px;
+}

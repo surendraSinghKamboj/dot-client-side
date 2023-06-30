@@ -22,7 +22,7 @@ const page = ({ params }) => {
     };
     fetchData();
   }, []);
-
+ 
   return (
     <>
       <div className="CompParent">

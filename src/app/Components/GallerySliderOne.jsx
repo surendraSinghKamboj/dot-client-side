@@ -63,6 +63,10 @@ const GallerySliderOne = ({products}) => {
                   <p className=" md:mt-3 md:mb-2 mt-0 ">{product.productName}</p>
                   <p>&#8377; {product.currentPrice}</p>
                 </div>
+                <div className="cart-and-buy-btn">
+                    <button>Add to Cart</button>
+                    <button>Buy Now</button>
+                </div>
               </div>
             </div>
           );

@@ -12,7 +12,18 @@ const Register = () => {
         email:"",
         password:""
     });
-  
+    
+    // async function postUserSignUp() {
+    //   try {
+    //     console.log("data1");
+    //     const response = await axios.post(`http://localhost:4001/api/v1/user/register`,data);
+    //     console.log("data");
+    //     console.log('Response:', response.data);
+    //     return response.data;
+    //   }
+    //   catch (error) { console.error('Error:', error.response.data); throw error; }
+    // }
+
     const handleInput=(e)=>{
         setInputData({...inputData,[e.target.name]:e.target.value});
     }
