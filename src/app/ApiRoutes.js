@@ -108,7 +108,7 @@ export const userLogin = async (data) => {
         const response = await axios.post(`/api/v1/user/login`, {...data})
         !response ?
             console.error("login field") :
-            console.log("error");
+            console.log(response.data);
     } catch (error) {
         console.error(error);
     }
