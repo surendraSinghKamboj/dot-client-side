@@ -105,7 +105,7 @@ export const addProduct = async (updater) => {
 //login
 export const userLogin = async (data) => {
     try {
-        const response = await axios.post(`${process.env.REACT_APP_GET_USER_LOGIN}`, data)
+        const response = await axios.post(`/api/v1/user/login`, {...data})
         !response ?
             console.error("login field") :
             console.log("error");
@@ -119,7 +119,7 @@ export const userSignup = async (data) => {
     try {
         const response = await axios.post(`/api/v1/user/register`, { ...data })
         !response ?
-            console.error("there is an error") :
+            console.error("there is an error, Signup Failed") :
             console.log(response);
     } catch (error) {
         console.error(error);

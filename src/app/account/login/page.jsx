@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import './page.css';
 import Link from 'next/link';
-
+import { userLogin } from '@/app/ApiRoutes';
 const Login = () => {
   const [inputData, setInputData] = useState({
       email:"",
@@ -15,6 +15,7 @@ const Login = () => {
   const handleForm=(e)=>{
        e.preventDefault();
        console.log(inputData);
+       userLogin(inputData);
   }
   return (
     <div>
