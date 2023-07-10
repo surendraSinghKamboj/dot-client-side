@@ -106,9 +106,7 @@ export const addProduct = async (updater) => {
 export const userLogin = async (data) => {
     try {
         const response = await axios.post(`/api/v1/user/login`, {...data})
-        !response ?
-            console.error("login field") :
-            console.log(response.data);
+        !response ? console.error("login field") : console.log(response.data);
     } catch (error) {
         console.error(error);
     }

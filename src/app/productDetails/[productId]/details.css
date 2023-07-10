@@ -91,7 +91,17 @@
     border-radius: 5px;
 }
 
-
+.DescriptionParent{
+    margin:0 20%;
+    font-weight: 650;
+}
+.description{
+    font-weight: 400;
+}
+.ul{
+    list-style-type: square;
+    font-weight: 400;
+}
 /* Media quarry */
 
 @media(max-width:1400px){
@@ -181,6 +191,8 @@
     .subImg{
         margin-right: 10px; 
      }
+     
+     /* Product Details or Description Section */
     .DetailsParent{ 
         justify-content:center; 
     }
@@ -194,6 +206,10 @@
         min-width: 100px;
         min-height: 140px;
      }
+     .DescriptionParent{
+        margin:0 9%;
+        font-weight: 650;
+    }
 }
 @media(max-width:400px){
     .CompParent{

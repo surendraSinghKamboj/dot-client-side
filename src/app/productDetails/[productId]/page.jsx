@@ -75,14 +75,14 @@ const ProductbyId = ({ params }) => {
             </div>
           </div>
           <div className="ContentParent">
-            <p className="brandName">Draft of Thread Clothing</p>
+            <p className="brandName">Dot Clothing</p>
             <h1 className="productName">{products.productName}</h1>
             <hr />
             <span className="currentprice">&#8377;{products.currentPrice}</span>
             <span className="mrpPrice">
               MRP <span className="subMrpPrice">&#8377;{products.mrp}</span>
             </span>{" "}
-            <span className="percentOff">(65% OFF)</span>
+            <span className="percentOff">({Math.floor(((products.mrp-products.currentPrice)/products.mrp)*100)}% OFF)</span>
             <p className="inclusiceTexas">inclusive of all taxes</p> <br />
             <p>Quantity:</p>
             <button className="quantitybutton">
@@ -108,6 +108,24 @@ const ProductbyId = ({ params }) => {
             </button>
           </div>
         </div>
+      </div>
+      <hr />
+      <div className="DescriptionParent">
+           <p className="productDescription">PRODUCT DESCRIPTION</p>
+           {
+
+           }
+           <div className="descriptionContent">
+                <p className="description">{products.description}
+                </p>
+                <ul className="ul">
+                  <li>Made in {products.madeIn}</li>
+                  <li>Product is available {products.indicator}</li>
+                  <li>{products.isCodAllowed ? "Cash on delivery available" : "Cash on delivery not available" }</li>
+                  <li>{products.isReturnAble ? "Easy 14 days returns and exchanges" : "No return policy"}</li>
+                  <li>{products.isCancelAble ? "Cancle Any Time and Get Refund" : "No Cancle policy"}</li>
+                </ul>
+           </div>
       </div>
     </>
   );

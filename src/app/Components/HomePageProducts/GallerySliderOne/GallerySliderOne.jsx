@@ -1,7 +1,7 @@
 "use client";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import productData from "./ProductData";
+// import productData from "./ProductData";
 import "./GallerySliderOne.css";
 import Link from "next/link";
 // import Image from "next/image";
@@ -26,16 +26,15 @@ const responsive = {
   },
 };
 
-const GallerySliderOne = ({products}) => {
-  const ButtonClick = () => {
-  };
+const GallerySliderOne = ({ products }) => {
+  const ButtonClick = () => {};
   return (
-    <div className=" mr-10 ml-10 ">
+    <div className=" mr-2 ml-2 ">
       <Carousel
         responsive={responsive}
         infinite={true}
         // autoPlay={this.deviceType !== "mobile" ? true : false}
-        // removeArrowOnDeviceType={["tablet", "mobile"]}
+        removeArrowOnDeviceType={["tablet", "mobile"]}
       >
         {products.map((product, i) => {
           return (
@@ -58,13 +57,15 @@ const GallerySliderOne = ({products}) => {
                     </Link>
                   </div>
                 </div>
-                <div className=" text-center">
-                  <p className=" md:mt-3 md:mb-2 mt-0 ">{product.productName}</p>
-                  <p>&#8377; {product.currentPrice}</p>
+                <div className="nameAndPriceText">
+                  <p className=" md:mt-3 md:mb-2 mt-0 ">
+                    {product.productName}
+                  </p>
+                  <p>&#8377; {product.currentPrice}/-</p>
                 </div>
                 <div className="cart-and-buy-btn">
-                    <button>Add to Cart</button>
-                    <button>Buy Now</button>
+                  <button className="addToCart">Add to Cart</button>
+                  <button className="buyNow">Buy Now</button>
                 </div>
               </div>
             </div>

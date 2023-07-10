@@ -25,11 +25,34 @@
    border-radius: 7px;
 }
 .image-container:hover .image-button {
- bottom: 10px;  
+  bottom: 10px;  
   opacity: 1;
 }
-.cart-and-buy-btn{
+.nameAndPriceText{
+     text-align: center;
+     margin-top: -25px;
+}
+.cart-and-buy-btn{ 
      display: flex;
      /* border: 2px solid red; */
      margin-top: -50px;
+     column-gap: 10px;
+}
+.addToCart{
+    background-color: rgb(109, 108, 108);
+    color: white;
+    padding: 2px 7px;
+    border-radius: 4px;
+}
+.addToCart:hover{
+      background-color: black;
+}
+.buyNow{
+    background-color: rgb(57, 126, 57);
+    color: white;
+    padding: 2px 7px;
+    border-radius: 4px;
+}
+.buyNow:hover{
+    background-color: rgb(5, 196, 5);
 }
