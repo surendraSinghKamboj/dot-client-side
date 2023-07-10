@@ -44,7 +44,7 @@ const Cart = () => {
           {/* Product Card in Cart Page */}
           {productDataLS.map((product, i) => {
             return (
-              <div className={styles.productMain}>
+              <div key={i} className={styles.productMain}>
                 <img
                   className={styles.productImg}
                   src={product.productMainImage}
